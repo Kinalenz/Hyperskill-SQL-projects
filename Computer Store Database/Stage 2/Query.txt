@@ -1,0 +1,16 @@
+SELECT 
+    p.maker,  
+    l.hd, 
+    l.speed, 
+    l.price,
+    l.model
+FROM 
+    Product p
+JOIN 
+    Laptop l ON p.model = l.model
+WHERE 
+    l.hd >= 1000
+ORDER BY 
+    l.hd ASC, 
+    l.speed DESC, 
+    l.price ASC;

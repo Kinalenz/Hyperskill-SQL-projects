@@ -1,0 +1,18 @@
+WITH comps AS (
+    SELECT p.maker, p.model, l.speed, l.price
+    FROM Laptop l
+    JOIN Product p ON l.model = p.model
+    UNION
+    SELECT p.maker, p.model, pc.speed, pc.price
+    FROM PC pc
+    JOIN Product p ON pc.model = p.model
+),
+    
+lowest_speed AS (
+    SELECT MIN(speed) AS min_speed
+    FROM comps
+)
+    
+SELECT *
+FROM comps 
+JOIN lowest_speed ls ON comps.speed = ls.min_speed;

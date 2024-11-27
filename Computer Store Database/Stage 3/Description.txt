@@ -1,0 +1,92 @@
+Description
+As a computer store manager, your next task is identifying unique product manufacturers delivering only one model. By sorting the manufacturers according to their special characteristics, you can determine if these one-product producers are essential to your supply chain. If they are not, you may consider cutting off their supplies.
+
+Objectives
+Using the Product table, determine the number of manufacturers producing one product model;
+
+Output the Number of unique manufacturers from the Product table.
+
+Take a look at the following database structure:
+
+
+
+Explanation of Database
+The Product table stores information about manufacturers (maker), model numbers (model), and product types (type). The model numbers in the Product table are unique across all manufacturers and product types.
+
+The PC table contains information about each personal computer, identified by a unique code (pc_code). A PC model is indicated using a foreign key to the Product table (model). Other specifications include the processor speed (speed) in megahertz, memory size (ram) in megabytes, hard disk capacity (hd) in gigabytes, the CD reader speed (cd) such as DVD, and the price (price) in dollars.
+
+The Laptop table is similar to the PC table, but instead of the CD reader speed, it includes the screen size (screen) in inches.
+
+The Printer table provides information about each printer model, such as whether it is color (color, indicated by C for color printers and B for black printers), the printer type (type, which can be Laser for laser printers, Jet for inkjet printers, or Matrix for matrix printers), and the price (price) in dollars.
+
+Click on the link to download the SQL query for creating the database.
+
+Examples
+Product Table Example:
+
+model
+
+maker
+
+type
+
+1001
+
+Apple
+
+Laptop
+
+1002
+
+Apple
+
+Laptop
+
+2001
+
+Acer
+
+PC
+
+3001
+
+HP
+
+Printer
+
+3002
+
+HP
+
+Laptop
+
+4001
+
+Samsung
+
+Printer
+
+5001
+
+Lenovo
+
+PC
+
+5002
+
+Lenovo
+
+PC
+
+5003
+
+Lenovo
+
+Laptop
+
+
+From the above table, it can be observed that only Acer and Samsung manufacturers produce one model. Therefore, based on the provided data, the Number of unique manufacturers is 2.
+
+Beginning of the code:
+
+SELECT COUNT(maker) as number_of_unique_makers...;

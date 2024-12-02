@@ -5,7 +5,7 @@ Check out my Hyperskill [profile](https://hyperskill.org/profile/501003816)
 ### Projects
 📝✏️ Total: 1
 
-1. **Computer Store Database** 
+1. **Computer Store Database** [GitHub](https://github.com/Kinalenz/Hyperskill-SQL-projects/tree/master/Computer%20Store%20Database)
    <br> [About](https://hyperskill.org/projects/352): As the manager of the computer hardware shop, your primary responsibility is to retrieve data from the existing database efficiently.
    Accurate data retrieval is crucial for creating reliable financial documents, accounting records, and business reports.
 
